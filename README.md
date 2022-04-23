@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+//Caffculator App details
+
+# caffculator
+
+A web application that allows users to calculate how much they've been drinking each week, especially since while caffeine is beneficial to the drinker,
+too much caffeine is detrimental to health.
