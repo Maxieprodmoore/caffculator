@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import '@shoelace-style/shoelace/dist/themes/light.css';
+import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js';
+import Navbar from './views/components/header';
+import Homepage from './views/pages/homepage';
+import Shop from './views/pages/shop';
+import ResourcesNMaterials from './views/pages/resourcesNMaterials.js';
+import Footer from './views/components/footer';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+// Set the base path to the folder you copied Shoelace's assets to
+setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/');
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+          <Routes>
+            <Route path='/' element={<Homepage />} />              
+            <Route path='shop/*' element={<Shop />} />
+            <Route path='resourcesNmaterials/*' element={<ResourcesNMaterials />} />              
+          </Routes>
+        <Footer />
+      </div>
+    </Router>
+    
   );
 }
 

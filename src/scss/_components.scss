@@ -1,0 +1,42 @@
+//Header Section
+nav{
+    background-color: black;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 0 1.25rem;
+    h1, a {
+        color: #FFFF;
+    }
+
+    h1 {
+        font-size: 4.4rem;
+        font-family: 'Sonsie One', cursive;
+    }
+
+    a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+    }
+}
+
+.linkButtons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    a{
+        padding-right: 2%;
+    }
+}
+
+//Footer section
+footer {
+    background-color: #434343;
+    color: #FFFF;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 0.125rem;
+    padding-bottom: 3rem;
+    width: 100vw;
+}
