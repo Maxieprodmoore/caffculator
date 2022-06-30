@@ -1,42 +1,53 @@
-//Header Section
-nav{
-    background-color: black;
-    width: 100vw;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    padding: 0 1.25rem;
-    h1, a {
+/*Navigation Section */
+    nav{
+        background-color: black;
+        width: 101%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: -0.5% -0.5% 0 -0.5%;
+        padding: 0 2.5rem;
+        h1, a {
+            color: #FFFF;
+            margin-top: 0.5%;
+            margin-bottom: 0.5%;
+        }
+
+        h1 {
+            font-size: 4.4rem;
+            font-family: 'Sonsie One', cursive;
+        }
+
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.75rem;
+        }
+
+        a:hover {
+            color: #C46F34;
+        }
+    }
+
+    .linkButtons {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding-left: 40%;
+        a{
+            padding-top: 15%;
+            padding-right: 10%;
+        }
+    }
+
+
+/*Footer section */
+    footer {
+        background-color: #434343;
         color: #FFFF;
+        text-align: center;
+        font-weight: 500;
+        padding-top: 0.125rem;
+        padding-bottom: 3rem;
+        width: 101%;
+        margin: 0% -0.5% -0.5% -0.5%;
     }
-
-    h1 {
-        font-size: 4.4rem;
-        font-family: 'Sonsie One', cursive;
-    }
-
-    a {
-        font-family: 'Roboto', sans-serif;
-        font-size: 2rem;
-    }
-}
-
-.linkButtons {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    a{
-        padding-right: 2%;
-    }
-}
-
-//Footer section
-footer {
-    background-color: #434343;
-    color: #FFFF;
-    text-align: center;
-    font-weight: 500;
-    padding-top: 0.125rem;
-    padding-bottom: 3rem;
-    width: 100vw;
-}

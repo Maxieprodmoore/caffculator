@@ -8,7 +8,6 @@ function AppHeader (){
 
                 <div className="linkButtons">
                     <Link to="/">Calculator</Link>
-                    <Link to="/resourcesNmaterials">Resources & Materials</Link>
                     <Link to="/shop">Shop</Link>
                 </div>            
             </nav>

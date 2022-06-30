@@ -1,112 +1,148 @@
-import { SlCard } from '@shoelace-style/shoelace/dist/react';
-import { SlButton } from '@shoelace-style/shoelace/dist/react';
+import { SlCard, SlButton, SlTab, SlTabGroup, SlTabPanel } from '@shoelace-style/shoelace/dist/react';
 
 function Shop () {
     return (
-        <div id="shop">
-            <div id="shopRack">
-                <h3>Hot Coffee</h3>
+        <SlTabGroup placement='start' id="shop">
+            <SlTab slot='nav' panel='Coffee'>Coffee</SlTab>
+            <SlTab slot='nav' panel='Coffee'>Tea</SlTab>
+            <SlTab slot='nav' panel='Coffee'>Soda</SlTab>
+            <SlTab slot='nav' panel='Coffee'>Coffee Brewing Machines</SlTab>
+            <SlTabPanel id="shopRack">
+                <h3>Coffees</h3>
                 <div className="shopRow">
                     <SlCard>
+                        <strong>vitae purus faucibus</strong>
                         <div slot='footer'>
-                            <strong>vitae purus faucibus</strong>
+                            
                             <p>S$3.00</p>
                             <SlButton>Add to Cart</SlButton>
                         </div>
                     </SlCard>
                     <SlCard>
+                        <strong>vitae purus faucibus</strong>
                         <div slot='footer'>
-                            <strong>vitae purus faucibus</strong>
                             <p>S$3.00</p>
                             <SlButton>Add to Cart</SlButton>
                         </div>
                     </SlCard>
                     <SlCard>
+                        <strong>vitae purus faucibus</strong>
                         <div slot='footer'>
-                            <strong>vitae purus faucibus</strong>
                             <p>S$3.00</p>
                             <SlButton>Add to Cart</SlButton>
                         </div>
                     </SlCard>
                     <SlCard>
+                        <strong>vitae purus faucibus</strong>
                         <div slot='footer'>
-                            <strong>vitae purus faucibus</strong>
                             <p>S$3.00</p>
                             <SlButton>Add to Cart</SlButton>
                         </div>
                     </SlCard>
                 </div>
-            </div>
+            </SlTabPanel>
             
-            <div id="shopRack">
-                <h3>Cold Coffee Brews</h3>
+            <SlTabPanel id="shopRack">
+                <h3>Teas</h3>
                 <div className="shopRow">
                     <SlCard>
+                        <strong>vitae purus faucibus</strong>
                         <div slot='footer'>
-                            <strong>vitae purus faucibus</strong>
+                            <p>S$3.00</p>
+                            <SlButton>Add to Cart</SlButton>
+                        </div>
+                    </SlCard>
+                    <SlCard>
+                        <strong>vitae purus faucibus</strong>
+                        <div slot='footer'>                            
+                            <p>S$3.00</p>
+                            <SlButton>Add to Cart</SlButton>
+                        </div>
+                    </SlCard>
+                    <SlCard>
+                        <strong>vitae purus faucibus</strong>
+                        <div slot='footer'>
                             <p>S$3.00</p>
                             <SlButton>Add to Cart</SlButton>
                         </div>
                     </SlCard>
                     <SlCard>
                         <div slot='footer'>
-                            <strong>vitae purus faucibus</strong>
-                            <p>S$3.00</p>
-                            <SlButton>Add to Cart</SlButton>
-                        </div>
-                    </SlCard>
-                    <SlCard>
-                        <div slot='footer'>
-                            <strong>vitae purus faucibus</strong>
-                            <p>S$3.00</p>
-                            <SlButton>Add to Cart</SlButton>
-                        </div>
-                    </SlCard>
-                    <SlCard>
-                        <div slot='footer'>
-                            <strong>vitae purus faucibus</strong>
                             <p>S$3.00</p>
                             <SlButton>Add to Cart</SlButton>
                         </div>
                     </SlCard>
                 </div>
-            </div>
+            </SlTabPanel>
             
-            <div id="shopRack">
-                <h3>Homebrew Coffee Productions</h3>
+            <SlTabPanel id="shopRack">
+                <h3>Sodas</h3>
                 <div className="shopRow">
                     <SlCard>
+                        <strong>vitae purus faucibus</strong>
                         <div slot='footer'>
-                            <strong>vitae purus faucibus</strong>
                             <p>S$3.00</p>
                             <SlButton>Add to Cart</SlButton>
                         </div>
                     </SlCard>
                     <SlCard>
+                        <strong>vitae purus faucibus</strong>
                         <div slot='footer'>
-                            <strong>vitae purus faucibus</strong>
                             <p>S$3.00</p>
                             <SlButton>Add to Cart</SlButton>
                         </div>
                     </SlCard>
                     <SlCard>
+                        <strong>vitae purus faucibus</strong>
                         <div slot='footer'>
-                            <strong>vitae purus faucibus</strong>
                             <p>S$3.00</p>
                             <SlButton>Add to Cart</SlButton>
                         </div>
                     </SlCard>
                     <SlCard>
+                        <strong>vitae purus faucibus</strong>
                         <div slot='footer'>
-                            <strong>vitae purus faucibus</strong>
                             <p>S$3.00</p>
                             <SlButton>Add to Cart</SlButton>
                         </div>
                     </SlCard>
                 </div>
-            </div>
+            </SlTabPanel>
+
+            <SlTabPanel id="shopRack">
+                <h3>Coffee Brewing Machines</h3>
+                <div className="shopRow">
+                    <SlCard>
+                        <strong>vitae purus faucibus</strong>
+                        <div slot='footer'>
+                            <p>S$3.00</p>
+                            <SlButton>Add to Cart</SlButton>
+                        </div>
+                    </SlCard>
+                    <SlCard>
+                        <strong>vitae purus faucibus</strong>
+                        <div slot='footer'>
+                            <p>S$3.00</p>
+                            <SlButton>Add to Cart</SlButton>
+                        </div>
+                    </SlCard>
+                    <SlCard>
+                        <div slot='footer'>
+                            <p>S$3.00</p>
+                            <SlButton>Add to Cart</SlButton>
+                        </div>
+                    </SlCard>
+                    <SlCard>
+                        <strong>vitae purus faucibus</strong>
+                        <div slot='footer'>
+                            <p>S$3.00</p>
+                            <SlButton>Add to Cart</SlButton>
+                        </div>
+                    </SlCard>
+                </div>
+            </SlTabPanel>
             
-        </div>
+        </SlTabGroup>
         
     );
 }

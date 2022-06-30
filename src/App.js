@@ -8,7 +8,7 @@ import Footer from './views/components/footer';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 // Set the base path to the folder you copied Shoelace's assets to
-setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/');
+setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.77/dist/');
 
 function App() {
   return (

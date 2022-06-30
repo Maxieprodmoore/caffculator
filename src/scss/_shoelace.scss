@@ -1,0 +1,9 @@
+/* Sl-Cards */
+.CaffeItem{
+    width: calc(31%);
+    margin: 0 0.5% 2%;
+}
+
+.CaffeItem::part(base):hover{
+    background: #C46F34;
+}
