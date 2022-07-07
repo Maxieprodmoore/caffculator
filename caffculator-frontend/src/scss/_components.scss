@@ -1,6 +1,15 @@
+/* Colours */
+ $brandColour: #BA7314;
+ $activeColour: #BF8C2C;
+ $warningColour: #E20F0F;
+ $tab: #E4DDDD;
+ $drinks: #D9A404;
+ $drinksActive: #BF8C2C;
+ $text: black;
+
 /*Navigation Section */
     nav{
-        background-color: black;
+        background-color: $brandColour;
         width: 101%;
         position: relative;
         display: flex;
@@ -8,7 +17,7 @@
         margin: -0.5% -0.5% 0 -0.5%;
         padding: 0 2.5rem;
         h1, a {
-            color: #FFFF;
+            color: $text;
             margin-top: 0.5%;
             margin-bottom: 0.5%;
         }
@@ -21,10 +30,10 @@
         a {
             font-family: 'Roboto', sans-serif;
             font-size: 1.75rem;
-        }
-
-        a:hover {
-            color: #C46F34;
+            
+            &:hover {
+                font-size: 1.78rem;
+            }
         }
     }
 
@@ -42,8 +51,8 @@
 
 /*Footer section */
     footer {
-        background-color: #434343;
-        color: #FFFF;
+        background-color: $brandColour;
+        color: $text;
         text-align: center;
         font-weight: 500;
         padding-top: 0.125rem;
